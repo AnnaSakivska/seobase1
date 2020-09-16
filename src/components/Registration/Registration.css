@@ -1,0 +1,141 @@
+@import url("./vars.css");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--roboto-font);
+  font-weight: normal;
+  line-height: 1.7;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 60rem;
+  margin: 6rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  margin-left: -10rem;
+  border: 1px solid white;
+  background-color: rgba(126, 213, 111, 0.4);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(126, 213, 111, 0.1),
+      rgba(21, 139, 172, 0.8)
+    ),
+    url(./img/logo-symbol-white.svg);
+  transform: skew(-15deg);
+  z-index: -1;
+}
+
+.logo {
+  display: block;
+  margin: 6rem auto 4rem;
+  width: 15%;
+}
+
+.seobase {
+  width: 30rem;
+  height: 35rem;
+  background: var(--background-primary_color);
+  margin: auto;
+  border: 1px solid var(--background-primary_color);
+  border-radius: 2%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+.seobase__title {
+  text-align: center;
+  margin: 2.5rem;
+  font-size: 3.4rem;
+}
+
+.seobase__registration-container {
+  width: 80%;
+  margin: auto;
+}
+
+.seobase__registration-container input,
+.form__submit {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  border: 2px solid var(--borders-color);
+  border-radius: 2%;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+}
+
+.seobase__form-wrapper {
+  position: relative;
+}
+
+.form__forgot-password {
+  position: absolute;
+  bottom: 5rem;
+  right: 2px;
+  cursor: pointer;
+  color: var(--secondary-text_color);
+}
+
+.form__password-icon {
+  transform: scale(0.4);
+  z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.form__submit {
+  border: 2px solid var(--primary-button_color);
+  background: var(--primary-button_color);
+  color: white;
+  cursor: pointer;
+}
+
+.seobase__registration-container label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.seobase__sign-up {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  color: var(--secondary-text_color);
+}
+
+.seobase__sign-up-span {
+  color: var(--primary-button_color);
+  cursor: pointer;
+}

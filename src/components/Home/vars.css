@@ -1,0 +1,17 @@
+html {
+  --header-color: rgb(7, 111, 195);
+  --white-color: #fff;
+  --background-screen-color: #eff6fc;
+  --background-alert-color: #fff2d6;
+  /* --background-secondary_color: #eeeef1;
+  --backgorund: #f8f8f8; */
+  --borders-color: #b8bbbe;
+  --darker-grey-color: #747272;
+
+  --secondary-text_color: #a3a6a7;
+  --primary-button_color: #2fc6f1;
+}
+
+body {
+  --roboto-font: "Roboto", sans-serif;
+}
