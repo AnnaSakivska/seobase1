@@ -1,0 +1,13 @@
+html {
+  --background-primary_color: #fff;
+  /* --background-secondary_color: #eeeef1;
+  --backgorund: #f8f8f8; */
+  --borders-color: #e3e7ed;
+
+  --secondary-text_color: #a3a6a7;
+  --primary-button_color: #2fc6f1;
+}
+
+body {
+  --roboto-font: "Roboto", sans-serif;
+}
