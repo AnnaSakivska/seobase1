@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef, useEffect, useCallback } from "react";
-import "./Registration.css";
+import "./Form.css";
 import eye from "./img/icons8-closed-eye-40.png";
 
 const validEmailRegex = RegExp(
@@ -64,6 +64,7 @@ export default class Form extends React.Component {
     const { errors } = this.state;
     return (
       <form
+        name="myForm"
         action="#"
         method="post"
         id="form"
@@ -79,8 +80,10 @@ export default class Form extends React.Component {
           type="email"
           id="email"
           placeholder="Enter your email"
+          minlength="8"
           onChange={this.handleChange}
           noValidate
+          required
         />
         {errors.email.length > 0 && (
           <span className="error">{errors.email}</span>
@@ -94,8 +97,10 @@ export default class Form extends React.Component {
           type="password"
           id="password"
           placeholder="Enter password"
+          minlength="8"
           onChange={this.handleChange}
           noValidate
+          required
         />
         {errors.password.length > 0 && (
           <span className="error">{errors.password}</span>
