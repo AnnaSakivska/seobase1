@@ -15,3 +15,5 @@ function App() {
 }
 
 export default App;
+
+// surge --domain http://seobase1-annasakivska.surge.sh/
