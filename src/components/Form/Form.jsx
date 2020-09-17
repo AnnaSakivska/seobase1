@@ -31,12 +31,6 @@ export default class Form extends React.Component {
     let errors = this.state.errors;
 
     switch (name) {
-      // case 'fullName':
-      //   errors.fullName =
-      //     value.length < 5
-      //       ? 'Full Name must be at least 5 characters long!'
-      //       : '';
-      //   break;
       case "email":
         errors.email = validEmailRegex.test(value) ? "" : "Email is not valid!";
         break;
@@ -68,12 +62,12 @@ export default class Form extends React.Component {
         action="#"
         method="post"
         id="form"
-        class="seobase__registration"
-        class="form"
+        className="seobase__registration"
+        className="form"
         onSubmit={this.handleSubmit}
         noValidate
       >
-        <label for="email" class="form__email">
+        <label htmFor="email" className="form__email">
           Email
         </label>
         <input
@@ -88,11 +82,11 @@ export default class Form extends React.Component {
         {errors.email.length > 0 && (
           <span className="error">{errors.email}</span>
         )}
-        <label for="password" class="form__password">
+        <label htmFor="password" className="form__password">
           Password
         </label>
-        <h3 class="form__forgot-password">Forgot Password?</h3>
-        <img class="form__password-icon" src={eye}></img>
+        <h3 className="form__forgot-password">Forgot Password?</h3>
+        <img className="form__password-icon" src={eye}></img>
         <input
           type="password"
           id="password"

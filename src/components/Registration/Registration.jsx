@@ -7,24 +7,24 @@ import { Link } from "react-router-dom";
 class Registration extends React.Component {
   render() {
     return (
-      <div class="container">
-        <img src={logo} alt="seobase logo" class="logo" />
-        <div class="seobase">
-          <h1 class="seobase__title">Log in</h1>
-          <div class="seobase__registration-container">
-            <div class="seobase__form-wrapper">
+      <div className="container">
+        <img src={logo} alt="seobase logo" className="logo" />
+        <div className="seobase">
+          <h1 className="seobase__title">Log in</h1>
+          <div className="seobase__registration-container">
+            <div className="seobase__form-wrapper">
               <Form />
             </div>
             <Link to="/home">
-              <button type="submit" value="Submit" class="form__submit">
+              <button type="submit" value="Submit" className="form__submit">
                 Log in
               </button>
             </Link>
           </div>
 
-          <p class="seobase__sign-up">
+          <p className="seobase__sign-up">
             Don't have an account?
-            <span class="seobase__sign-up-span">Sign up</span>
+            <span className="seobase__sign-up-span">Sign up</span>
           </p>
         </div>
       </div>
